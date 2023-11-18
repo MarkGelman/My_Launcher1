@@ -1,0 +1,127 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\Res\Background\WOW.png" />
+    <None Remove="View\Res\Icons\Close.png" />
+    <None Remove="View\Res\Icons\codbo4.png" />
+    <None Remove="View\Res\Icons\codmw.png" />
+    <None Remove="View\Res\Icons\codmw2.png" />
+    <None Remove="View\Res\Icons\diablo.png" />
+    <None Remove="View\Res\Icons\hots.png" />
+    <None Remove="View\Res\Icons\hs.png" />
+    <None Remove="View\Res\Icons\Open.png" />
+    <None Remove="View\Res\Icons\overwatch.png" />
+    <None Remove="View\Res\Icons\sc.png" />
+    <None Remove="View\Res\Icons\sc2.png" />
+    <None Remove="View\Res\Icons\warcraaft3.png" />
+    <None Remove="View\Res\Icons\wow.png" />
+    <None Remove="View\Res\Top\DIABLO.png" />
+    <None Remove="View\Res\Top\HOTS.png" />
+    <None Remove="View\Res\Top\HS.png" />
+    <None Remove="View\Res\Top\OW.png" />
+    <None Remove="View\Res\Top\SC.png" />
+    <None Remove="View\Res\Top\SC2.png" />
+    <None Remove="View\Res\Top\W3.png" />
+    <None Remove="View\Res\Top\WOW.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="View\Res\Background\WOW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\Close.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\codbo4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\codmw.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\codmw2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\diablo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\hots.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\hs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\Open.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\overwatch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\sc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\sc2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\warcraaft3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Icons\wow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Top\DIABLO.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Top\HOTS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Top\HS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Top\OW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Top\SC.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Top\SC2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Top\W3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="View\Res\Top\WOW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+    <PackageReference Include="IKVM" Version="8.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ViewModel\SLideShowViewModel.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
