@@ -36,10 +36,10 @@ namespace My_Launcher.ViewModel
                     if (topImageFile == backImageFile)
                         Images.Add(
                             new SlideShowModel { pathToBackImageFile = backImageFile, pathToTopImageFile = topImageFile });
-                       
-            // Настройка таймера для автоматической смены слайдов
+
+            // Setting up a timer for automatically changing slides
             timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(5); // Интервал смены слайдов (5 секунд в данном случае)
+            timer.Interval = TimeSpan.FromSeconds(5); // Slide change interval (5 seconds in this case)
             timer.Tick += (sender, e) => NextSlide();
             timer.Start();
         }
@@ -64,9 +64,9 @@ namespace My_Launcher.ViewModel
             }
         }
 
-        
 
-        // Метод для переключения к следующему слайду
+
+        // Method for switching to next slide
         public void NextSlide()
         {
             if (CurrentIndex < Images.Count - 1)
@@ -75,7 +75,7 @@ namespace My_Launcher.ViewModel
             }
             else
             {
-                CurrentIndex = 0; // Вернуться к первому слайду, если достигнут конец списка
+                CurrentIndex = 0; // Return to the first slide if the end of the list is reached
             }
         }
 
